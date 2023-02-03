@@ -15,7 +15,21 @@
   <body>
     <header class="header container">
       <div class="header-phone">
-        <a class="header-tel" href="tel:+375333975975">+375(33)3-975-975</a>
+        <a class="header-tel" href="tel:+375333975975"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-telephone"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+            />
+          </svg>
+          +375(33)3-975-975</a
+        >
         <div class="grafik-wrap">
           <p class="header-grafik">
             График работы: <span>Пн-Вс 9:00 - 21:00</span>
@@ -25,7 +39,9 @@
       </div>
       <div class="header-main">
         <div class="header-main-wrap">
-          <div class="logo">Balance</div>
+          <div class="logo">
+            <img src="./img/logo.png" alt="balance" />
+          </div>
           <div class="header-title">
             <span>Аппаратная коррекция фигуры</span>
             <span>Ручной массаж</span>
@@ -34,13 +50,17 @@
           </div>
         </div>
         <div class="header-main-btns">
-          <button class="btn btn-success">Заказать обратный звонок</button>
-          <button class="btn btn-success">Оставить отзыв</button>
+          <button class="btn btn-header">Заказать обратный звонок</button>
+          <button class="btn btn-header">Оставить отзыв</button>
         </div>
       </div>
     </header>
     <main class="container">
-      <ul class="nav main-nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <ul
+        class="nav main-nav nav-pills mb-3 flex-column flex-sm-row"
+        id="pills-tab"
+        role="tablist"
+      >
         <li class="nav-item" role="presentation">
           <button
             class="nav-link main-nav-item active"
@@ -148,53 +168,81 @@
           aria-labelledby="pills-service-tab"
           tabindex="0"
         >
-          <h2>Услуги и цены</h2>
-          <ul class="list-group service-list">
-            <li class="list-group-item service-list-item">
-              <span>Аппартаная коррекция фигуры (30 мин пробный сеанс)</span
-              ><span>20р</span>
-            </li>
-            <li class="list-group-item service-list-item">
-              <span>Аппартаная коррекция фигуры (30 мин )</span><span>30р</span>
-            </li>
-            <li class="list-group-item service-list-item">
-              <span>Аппаратная коррекция фигуры (40 мин)</span><span>37р</span>
-            </li>
-            <li class="list-group-item service-list-item">
-              <span>Аппартаная коррекция фигуры (50 мин)</span><span>47р</span>
-            </li>
-            <li class="list-group-item service-list-item">
-              <span>Ручной массаж</span><span>?р</span>
-            </li>
-            <li class="list-group-item service-list-item">
-              <span>Массаж шейно-воротниковой зоны (20 мин)</span
-              ><span>25р</span>
-            </li>
-            <li class="list-group-item service-list-item">
-              <span>Массаж спины (30-40мин)</span><span>30р</span>
-            </li>
-            <li class="list-group-item service-list-item">
-              <span>Общий массаж (1 ч 15 мин)</span><span>40р</span>
-            </li>
-            <li class="list-group-item service-list-item">
-              <span>Массаж рук, ног, стоп ( 15мин)</span><span>20р</span>
-            </li>
-            <li class="list-group-item service-list-item">
-              <span>Массаж головы ( 20 мин)</span><span>20р</span>
-            </li>
-            <li class="list-group-item service-list-item">
-              <span>Аппаратный массаж лица</span><span>20р</span>
-            </li>
-          </ul>
+          <h2 class="section-title">Услуги и цены</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="list-group service-list shadow-lg">
+                <li class="list-group-item service-list-item">
+                  <span>Аппартаная коррекция фигуры (30 мин пробный сеанс)</span
+                  ><span>20р</span>
+                </li>
+                <li class="list-group-item service-list-item">
+                  <span>Аппартаная коррекция фигуры (30 мин )</span
+                  ><span>30р</span>
+                </li>
+                <li class="list-group-item service-list-item">
+                  <span>Аппаратная коррекция фигуры (40 мин)</span
+                  ><span>37р</span>
+                </li>
+                <li class="list-group-item service-list-item">
+                  <span>Аппартаная коррекция фигуры (50 мин)</span
+                  ><span>47р</span>
+                </li>
+                <li class="list-group-item service-list-item">
+                  <span>Ручной массаж</span><span>?р</span>
+                </li>
+                <li class="list-group-item service-list-item">
+                  <span>Массаж шейно-воротниковой зоны (20 мин)</span
+                  ><span>25р</span>
+                </li>
+                <li class="list-group-item service-list-item">
+                  <span>Массаж спины (30-40мин)</span><span>30р</span>
+                </li>
+                <li class="list-group-item service-list-item">
+                  <span>Общий массаж (1 ч 15 мин)</span><span>40р</span>
+                </li>
+                <li class="list-group-item service-list-item">
+                  <span>Массаж рук, ног, стоп ( 15мин)</span><span>20р</span>
+                </li>
+                <li class="list-group-item service-list-item">
+                  <span>Массаж головы ( 20 мин)</span><span>20р</span>
+                </li>
+                <li class="list-group-item service-list-item">
+                  <span>Аппаратный массаж лица</span><span>20р</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6"></div>
+          </div>
         </div>
         <div
-          class="tab-pane fade"
+          class="tab-pane fade specialists"
           id="pills-specialists"
           role="tabpanel"
           aria-labelledby="pills-specialists-tab"
           tabindex="0"
         >
-          Специалисты
+          <h2 class="section-title">Специалисты</h2>
+          <div class="row specialists-wrap">
+            <div class="col-md-6 specialists-item">
+              <img src="./img/personal.jpg" alt="мастер" />
+            </div>
+            <div class="col-md-6 specialists-item specialists-text">
+              <h2 class="text-center">Татьяна</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
+                itaque dolorem quis consequatur dolore, fugit similique eveniet
+                dolores! Impedit inventore sunt nobis minus quaerat! Impedit
+                consequuntur accusamus quae quam iusto.
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
+                itaque dolorem quis consequatur dolore, fugit similique eveniet
+                dolores! Impedit inventore sunt nobis minus quaerat! Impedit
+                consequuntur accusamus quae quam iusto.
+              </p>
+            </div>
+          </div>
         </div>
         <div
           class="tab-pane fade"
@@ -203,7 +251,39 @@
           aria-labelledby="pills-equipment-tab"
           tabindex="0"
         >
-          Оборудование
+          <h2 class="section-title">Оборудование</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Вакуумно-роликовый массажер Vortex</h3>
+              <h4>Снижение веса</h4>
+              <p>
+                Вакуумно-роликовый массажер Vortex – одно из самых эффективных и
+                надежных средств для достижения стройности. Различные виды
+                массажного воздействия и профессиональное применение
+                возможностей аппарата позволят избавиться от лишнего веса и
+                целлюлита, подтянуть мышцы и обрести фигуру своей мечты!
+              </p>
+              <h4>Уменьшение объемов</h4>
+              <p>
+                Реальное уменьшение объемов и общее оздоровление организма – вот
+                лишь некоторые преимущества использования массажера Vortex.
+                Применение аппаратного массажа станет отличной возможностью
+                добиться потрясающего результата – стройной фигуры и отличного
+                самочувствия.
+              </p>
+              <h4>Избавление от целлюлита</h4>
+              <p>
+                Избавиться от целлюлита в короткие сроки? Добиться впечатляющих
+                результатов — подтянутой фигуры, гладкой кожи, стройности? Все
+                это возможно с уникальным вакуумно-роликовым массажером Vortex,
+                совмещающем в себе эффективность воздействия, надежность сборки
+                и высокое качество.
+              </p>
+            </div>
+            <div class="col-md-6 equipment-img">
+              <img src="https://thumb.tildacdn.com/stor3035-6236-4765-b366-623266656564/-/format/webp/27284162.png" alt="">
+            </div>
+          </div>
         </div>
         <div
           class="tab-pane fade"
@@ -212,7 +292,7 @@
           aria-labelledby="pills-contraindications-tab"
           tabindex="0"
         >
-          Противопоказания
+          <h2 class="section-title">Противопоказания</h2>
         </div>
         <div
           class="tab-pane fade"
@@ -221,7 +301,7 @@
           aria-labelledby="pills-discounts-tab"
           tabindex="0"
         >
-          Скидки
+          <h2 class="section-title">Скидки</h2>
         </div>
         <div
           class="tab-pane fade"
@@ -230,7 +310,7 @@
           aria-labelledby="pills-about-tab"
           tabindex="0"
         >
-          <h2>О нас</h2>
+          <h2 class="section-title">О нас</h2>
           <p>
             Современная студия аппаратаной коррекции фигуры , ручного массажа,
             аппаратного массажа,массажа лица открыта с декабря 2022 года.
@@ -244,7 +324,7 @@
           aria-labelledby="pills-contacts-tab"
           tabindex="0"
         >
-          <h2>Контакты</h2>
+          <h2 class="section-title">Контакты</h2>
           <p>
             адрес : г. Жодино, ул. Сухогрядская 8а , 2этаж тел +375(33)3-957-957
             фото здание потом карту проезда потом инстаграмм :

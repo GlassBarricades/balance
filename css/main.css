@@ -1,41 +1,106 @@
+@font-face {
+  font-family: "ArnoPro";
+  src: url("../fonts/arnopro_bold.otf");
+}
+@font-face {
+  font-family: "ArnoProSmText";
+  src: url("../fonts/ArnoPro-SmText.otf");
+}
+
+body {
+  background-color: #ffffe0;
+  font-family: "ArnoProSmText";
+  font-size: 18px;
+}
+.btn-header {
+  background-color: #ffdab9;
+  color: #111111;
+  font-size: 1.1em;
+}
+.btn-header:hover {
+  background-color: #d2b48c;
+  color: #ffffff;
+}
+.section-title {
+  font-family: "ArnoPro";
+  text-align: center;
+}
+.list-group-item {
+  background-color: #ffdab9;
+}
 .header-phone {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 6vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 6vh;
 }
 .header-phone p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 .header-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
 }
 .header-main-wrap {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .logo {
-    margin-right: 1em;
+  margin-right: 1em;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 100%;
 }
 .header-title {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+.nav-link {
+  color: #111111;
+}
+.nav-pills .nav-link.active {
+  background-color: #ffdab9;
+  color: #111111;
 }
 .main-nav {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .main-nav-item {
-    padding: 2em;
+  padding: 2em;
 }
 .service-list {
-    max-width: 500px;
+  max-width: 500px;
 }
 .service-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.specialists-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.specialists-text {
+  flex-direction: column;
+}
+
+.specialists img {
+  max-height: 500px;
+}
+.equipment-img img {
+    max-height: 500px;
+}
+.equipment-img {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
