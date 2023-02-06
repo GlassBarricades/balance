@@ -7,26 +7,36 @@
   src: url("../fonts/ArnoPro-SmText.otf");
 }
 
+:root {
+  --main-bg-color: #e6ee9c;
+  --add-color: #afb42b;
+  --add-hover-color: #9e9d24;
+  --main-bg-gradient: linear-gradient(149deg, rgba(212,225,87,1) 0%, rgba(230,238,156,1) 35%, rgba(240,244,195,1) 100%);
+}
+
 body {
-  background-color: #ffffe0;
+  background: var(--main-bg-gradient);
   font-family: "ArnoProSmText";
   font-size: 18px;
+  min-height: 100vh;
+}
+a {
+  color: #111111;
 }
 .btn-header {
-  background-color: #ffdab9;
+  background-color: var(--add-color);
   color: #111111;
   font-size: 1.1em;
 }
 .btn-header:hover {
-  background-color: #d2b48c;
-  color: #ffffff;
+  background-color: var(--add-hover-color);
 }
 .section-title {
   font-family: "ArnoPro";
   text-align: center;
 }
 .list-group-item {
-  background-color: #ffdab9;
+  background-color: var(--add-color);
 }
 .header-phone {
   display: flex;
@@ -66,7 +76,7 @@ body {
   color: #111111;
 }
 .nav-pills .nav-link.active {
-  background-color: #ffdab9;
+  background-color: var(--add-color);
   color: #111111;
 }
 .main-nav {
@@ -103,4 +113,28 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.card-body {
+  background-color: var(--add-color);
+}
+.text-center-p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+/* .modal-header {
+  background-color: var(--main-bg-color);
+}
+.modal-footer {
+  background-color: var(--main-bg-color);
+}
+.modal-body {
+  background-color: var(--main-bg-color);
+} */
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-img {
+  width: 100%;
 }

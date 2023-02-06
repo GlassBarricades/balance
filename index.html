@@ -50,8 +50,38 @@
           </div>
         </div>
         <div class="header-main-btns">
-          <button class="btn btn-header">Заказать обратный звонок</button>
+          <button class="btn btn-header" data-bs-toggle="modal" data-bs-target="#exampleModal">Заказать обратный звонок</button>
           <button class="btn btn-header">Оставить отзыв</button>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Заказ звонка</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="mb-3">
+                  <label for="inputName" class="form-label">Имя</label>
+                  <input type="text" class="form-control" id="inputName" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                  <button type="submit" class="btn btn-primary">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -212,7 +242,9 @@
                 </li>
               </ul>
             </div>
-            <div class="col-md-6"></div>
+            <div class="col-md-6 service">
+              <img class="service-img" src="https://romanov5.ru/wp-content/uploads/2020/10/%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8-%D0%BC%D0%B0%D1%81%D1%81%D0%B0%D0%B6%D0%B0-%D0%B2-%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5-1024x683.jpg" alt="">
+            </div>
           </div>
         </div>
         <div
@@ -281,7 +313,10 @@
               </p>
             </div>
             <div class="col-md-6 equipment-img">
-              <img src="https://thumb.tildacdn.com/stor3035-6236-4765-b366-623266656564/-/format/webp/27284162.png" alt="">
+              <img
+                src="https://thumb.tildacdn.com/stor3035-6236-4765-b366-623266656564/-/format/webp/27284162.png"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -293,6 +328,44 @@
           tabindex="0"
         >
           <h2 class="section-title">Противопоказания</h2>
+          <p class="text-center text-center-p mb-3">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
+            officia, rerum culpa sint reprehenderit sunt iure illo sapiente
+            autem eligendi blanditiis consequatur, reiciendis amet veritatis,
+            officiis voluptate dicta! Facere, distinctio!
+          </p>
+          <div class="row g-5">
+            <div class="col-md-6">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  -обострение хроических заболевания
+                </li>
+                <li class="list-group-item">-выраженный варикоз или тромбоз</li>
+                <li class="list-group-item">-онкопатология</li>
+                <li class="list-group-item">
+                  -повреждение кожного покрова в области проведения процедуры
+                </li>
+                <li class="list-group-item">-беременность</li>
+                <li class="list-group-item">-послеродовой период ( 6 мес.)</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-group">
+                <li class="list-group-item">-диабет</li>
+                <li class="list-group-item">
+                  -период послеопреационной медицинской реабилитации
+                </li>
+                <li class="list-group-item">
+                  -сердечно-сосудистые заболевания
+                </li>
+                <li class="list-group-item">-эндокринные заболевания</li>
+                <li class="list-group-item">
+                  -роблемы со свертываемостью крови
+                </li>
+                <li class="list-group-item">-наличие грыж</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div
           class="tab-pane fade"
@@ -325,11 +398,18 @@
           tabindex="0"
         >
           <h2 class="section-title">Контакты</h2>
-          <p>
-            адрес : г. Жодино, ул. Сухогрядская 8а , 2этаж тел +375(33)3-957-957
-            фото здание потом карту проезда потом инстаграмм :
-            balance.estetic.207
-          </p>
+          <div class="row">
+            <div class="col-md-6">
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9d75f5e765e1655feb08805f6b23767c2e77b788c8537f4e6f087d08136960c1&amp;source=constructor" width="100%" height="535" frameborder="0"></iframe>
+            </div>
+            <div class="col-md-6">
+              <p>
+                адрес : г. Жодино, ул. Сухогрядская 8а , 2этаж тел +375(33)3-957-957
+                фото здание потом карту проезда потом инстаграмм :
+                balance.estetic.207
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </main>
