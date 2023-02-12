@@ -9,7 +9,7 @@
 
 :root {
   --main-bg-color: #e6ee9c;
-  --add-color: #afb42b;
+  --add-color: #d4e157;
   --add-hover-color: #9e9d24;
   --main-bg-gradient: linear-gradient(149deg, rgba(212,225,87,1) 0%, rgba(230,238,156,1) 35%, rgba(240,244,195,1) 100%);
 }
@@ -137,4 +137,29 @@ a {
 }
 .service-img {
   width: 100%;
+}
+.sale-item-img {
+  width: 80px;
+}
+.sale-item {
+  display: flex;
+  align-items: center;
+}
+.sale-item-text {
+  display: flex;
+  line-height: 100%;
+}
+.accordion-button {
+  background-color: var(--add-color);
+}
+.accordion-button:focus {
+  background-color: var(--add-color);
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--add-color);
+  color: #111111;
+}
+.accordion-item {
+  background-color: var(--main-bg-color);
+  border: 1px solid gray;
 }
