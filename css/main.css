@@ -9,7 +9,8 @@
 
 :root {
   --main-bg-color: #e6ee9c;
-  --add-color: #d4e157;
+  --add-color-btn: #d4e157;
+  --add-color: rgba(255,250,250, 0.2);
   --add-hover-color: #9e9d24;
   --main-bg-gradient: linear-gradient(149deg, rgba(212,225,87,1) 0%, rgba(230,238,156,1) 35%, rgba(240,244,195,1) 100%);
 }
@@ -24,7 +25,7 @@ a {
   color: #111111;
 }
 .btn-header {
-  background-color: var(--add-color);
+  background-color: var(--add-color-btn);
   color: #111111;
   font-size: 1.1em;
 }
@@ -76,7 +77,7 @@ a {
   color: #111111;
 }
 .nav-pills .nav-link.active {
-  background-color: var(--add-color);
+  background-color: var(--add-color-btn);
   color: #111111;
 }
 .main-nav {
